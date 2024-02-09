@@ -93,7 +93,7 @@ ul li a:hover {
 }
 
 .section__container {
-  min-height: 100vh;
+  margin-top: 100px !important; /* Adjust the value based on your navbar height */
   max-width: var(--max-width);
   margin: auto;
   padding: 1rem;
@@ -182,6 +182,13 @@ ul li a:hover {
   nav .checkbox {
     display: block;
   }
+  .tech-item img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .section__container {
+    margin-top: 0 !important;
+  }
 
   ul {
     position: absolute;
@@ -232,8 +239,8 @@ ul li a:hover {
 }
 
 .tech-item img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
@@ -246,4 +253,8 @@ ul li a:hover {
 
 .tech-item:hover {
   transform: scale(1.1);
+}
+
+.center {
+  text-align: center;
 }

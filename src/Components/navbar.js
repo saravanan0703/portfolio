@@ -6,7 +6,7 @@ function Navbar() {
             <nav>
                 <div className="nav__content">
                     <div className="logo"><a href="#">Saravanan</a></div>
-                    <label for="check" className="checkbox">
+                    <label htmlFor="check" className="checkbox">
                     <i className="ri-menu-line"></i>
                     </label>
                     <input type="checkbox" name="check" id="check" />
