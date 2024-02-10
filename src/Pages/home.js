@@ -1,18 +1,25 @@
 import React from "react";
 import profileImage from '../profile-image.jpeg'
-import reactImage from '../gifs/react-img.gif'
-import laravelImage from '../gifs/laravel.gif'
-import mysqlImg from '../gifs/mysql.gif'
-import nodeImage from '../gifs/nodejs.gif'
+import Cards from "../Components/cards";
+import Lottie from 'lottie-react';
+
+import animationData from '../json/json.json';
 function Home() {
     return(
         <section className="section">
             <div className="section__container">
               <div className="content">
+                  <div className="hello-json">
+                    <Lottie
+                      animationData={animationData}
+                      loop={true}
+                      autoplay={true} 
+                    />
+                  </div>
                   <p className="subtitle">HELLO</p>
                   <h1 className="title">
                       I'm <span>Saravanan<br />a</span> full-stack developer
-                  </h1>
+                  </h1>      
                   <p className="description">
                       Welcome to my portfolio! I'm Saravanan, a skilled and
                       creative web developer with a passion for creating beautiful,
@@ -32,27 +39,7 @@ function Home() {
             <div className="container">
               <div className="technologies">
                     <h1>Technologies I've Worked With</h1>
-                    <div>
-                      <div className="tech-item">
-                        <img src={reactImage} alt="React" />
-                        <span>React.js</span>
-                      </div>
-                      <div className="tech-item">
-                        <img src={nodeImage} alt="Node.js" />
-                        <span>Node.js</span>
-                      </div>
-                    </div>
-
-                    <div>
-                      <div className="tech-item">
-                        <img src={laravelImage} alt="Laravel" />
-                        <span>Laravel PHP</span>
-                      </div>
-                      <div className="tech-item">
-                        <img src={mysqlImg} alt="MySQL" />
-                        <span>MySQL</span>
-                      </div>
-                    </div>
+                    <Cards />
                     
               </div>
             </div>

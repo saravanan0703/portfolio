@@ -178,14 +178,155 @@ ul li a:hover {
   border-radius: 100%;
 }
 
+
+.technologies {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.tech-item {
+  margin: 20px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tech-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.tech-item span {
+  display: block;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.tech-item:hover ,
+.card:hover {
+  transform: scale(1.1);
+}
+
+.center {
+  text-align: center;
+}
+.tech-cards {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.tech-cards .card-group {
+  gap: 25px;
+}
+
+.tech-cards .card-group .card {
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.tech-item.version img {
+  width: 85%;
+  height: 70px;
+  border-radius: 0;
+}
+.hello-json svg{
+  height: 200px !important;
+  width: 30% !important;
+}
+
+.cards-cont1 .card {
+  margin: 0 0 25px 0;
+}
+.cards-cont1 .card .version {
+  display: block;
+}
+.cards-cont1 .card .version img {
+  width: auto;
+
+}
+
+.scripts svg {
+  height: auto !important;
+}
+
+.scripts svg {
+  position: relative;
+  right: 70px;
+}
+.scripts .html {
+  position: absolute;
+  top: 50px;
+  right: 150px;
+}
+
+.scripts .hello-json {
+  position: relative;
+}
+.scripts .css {
+  position: absolute;
+  top: 188px;
+  right: 155px;
+}
+.scripts .js-icons .js{
+  position: relative;
+  bottom: 75px;
+  left: 50px;
+}
+.cards-cont1 .mysql img {
+  height: 100px;
+}
+.sass-icons {
+  display: flex;
+}
+.sass-icons img {
+  width: 50%;
+  position: relative;
+  left: 35px;
+}
+.sass-icons .sass {
+  display: inline-flex;
+  align-items: center;
+}
 @media (width < 750px) {
+  .sass-icons img {
+    width: 30%;
+    left: 65px;
+  }
+  .tech-cards .card-group {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  .sass-icons .sass {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    left: 60px;
+  }
+    
   nav .checkbox {
     display: block;
   }
-  .tech-item img {
-    width: 100px !important;
-    height: 100px !important;
+  .scripts .js-icons .js{
+    left: 130px;
+    width: 50%;
   }
+  .scripts .html {
+    top: 45px;
+  }
+  .scripts .css {
+    right: 160px;
+    top: 170px;
+  }
+  nav ul {
+    padding: 0 10px;
+  }
+
+  .hello-json svg{
+    width: 30% !important;
+  }
+
   .section__container {
     margin-top: 0 !important;
   }
@@ -193,7 +334,7 @@ ul li a:hover {
   ul {
     position: absolute;
     width: 100%;
-    height: calc(100vh - 85px);
+    height: calc(100vh - 50vh);
     left: -100%;
     top: 85px;
     background-color: var(--extra-light);
@@ -223,38 +364,4 @@ ul li a:hover {
   .action__btns {
     margin: auto;
   }
-}
-
-.technologies {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.tech-item {
-  margin: 20px;
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-}
-
-.tech-item img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.tech-item span {
-  display: block;
-  font-size: 1.2em;
-  color: #333;
-}
-
-.tech-item:hover {
-  transform: scale(1.1);
-}
-
-.center {
-  text-align: center;
 }
