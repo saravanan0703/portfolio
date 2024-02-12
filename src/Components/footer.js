@@ -1,6 +1,6 @@
 import React from "react"
-import devop from "../gifs/developer.gif"
-
+import webIcon from '../json/web.json'
+import Lottie from "lottie-react";
 function Footer() {
   return(
     <div>
@@ -13,8 +13,8 @@ function Footer() {
             <li className="nav-item"><a href="#" className="nav-link px-2 text-body-secondary">Portfolio</a></li>
             <li className="nav-item"><a href="#" className="nav-link px-2 text-body-secondary">Contact</a></li>
           </ul>
-          <div className="center">
-            <img src={devop} />
+          <div className="center website-icon">
+            <Lottie animationData={webIcon} loop={true} autoplay={true} />
           </div>
           <p className="text-center text-body-secondary">© 2024</p>
         </footer>

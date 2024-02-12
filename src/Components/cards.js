@@ -10,6 +10,8 @@ import animationData from '../json/html.json';
 import CssData from '../json/css.json'
 import jsData from '../json/javascript.json'
 import sassimg from '../images/sass.png'
+import bootstrapimg from '../gifs/bootstrap.gif'
+import tailwindimg from '../images/tailwind.png'
 function Cards() {
     return(
         <div className="tech-cards">
@@ -54,6 +56,16 @@ function Cards() {
                         <div className="tech-item">
                             <img src={laravelImage} alt="Laravel" />
                             <span>Laravel PHP</span>
+                        </div>
+                        <div>
+                            <div className="tech-item">
+                                <img src={bootstrapimg} alt="Laravel" />
+                                <span>Bootstrap</span>
+                            </div>
+                            <div className="tech-item">
+                                <img src={tailwindimg} alt="Laravel" />
+                                <span>TailWind Css</span>
+                            </div>
                         </div>
                     </div>
                 </div>

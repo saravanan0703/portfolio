@@ -2,8 +2,9 @@ import React from "react";
 import profileImage from '../profile-image.jpeg'
 import Cards from "../Components/cards";
 import Lottie from 'lottie-react';
-
 import animationData from '../json/json.json';
+import { ReactTyped } from "react-typed";
+
 function Home() {
     return(
         <section className="section">
@@ -18,7 +19,8 @@ function Home() {
                   </div>
                   <p className="subtitle">HELLO</p>
                   <h1 className="title">
-                      I'm <span>Saravanan<br />a</span> full-stack developer
+                      I'm <span>Saravanan<br />a </span> 
+                      <ReactTyped strings={["Full Stack Developer"]} typeSpeed={120} loop />
                   </h1>      
                   <p className="description">
                       Welcome to my portfolio! I'm Saravanan, a skilled and
