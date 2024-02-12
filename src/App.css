@@ -298,6 +298,9 @@ ul li a:hover {
     display: flex;
     flex-flow: column-reverse;
   }
+  .tech-cards {
+    display: block;
+  }
   .sass-icons .sass {
     display: inline-flex;
     align-items: center;
@@ -314,10 +317,11 @@ ul li a:hover {
   }
   .scripts .html {
     top: 45px;
+    right: 120px;
   }
   .scripts .css {
-    right: 160px;
-    top: 170px;
+    right: 130px;
+    top: 150px;
   }
   nav ul {
     padding: 0 10px;
