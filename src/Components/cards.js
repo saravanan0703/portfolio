@@ -13,11 +13,22 @@ import sassimg from '../images/sass.png'
 import bootstrapimg from '../gifs/bootstrap.gif'
 import tailwindimg from '../images/tailwind.png'
 function Cards() {
+
+    const images = [
+        { src: laravelImage},
+        { src: nodeImage},
+        { src: animationData},
+        { src: reactImage},
+        { src: sassimg},
+        { src: bootstrapimg},
+      ]  
+
     return(
+        <>
         <div className="tech-cards">
             <div class="card-group">
                 <div className="cards-cont1">
-                    <div class="card">
+                    <div class="card shadow-lg p-3 mb-5 bg-white rounded">
                         <div class="card-body">
                             <h5 class="card-title">Version Control</h5>
                             <div className="tech-item version">
@@ -30,7 +41,7 @@ function Cards() {
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card shadow-lg p-3 mb-5 bg-white rounded">
                         <div class="card-body">
                             <h5 class="card-title">Databases</h5>
                             <div className="tech-item version">
@@ -42,7 +53,7 @@ function Cards() {
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
                     <div class="card-body">
                         <h5 class="card-title">Frameworks</h5>
                         <div className="tech-item">
@@ -69,7 +80,7 @@ function Cards() {
                         </div>
                     </div>
                 </div>
-                <div class="card scripts">
+                <div class="card scripts shadow-lg p-3 mb-5 bg-white rounded">
                     <div class="card-body">
                         <h5 class="card-title">Scripting Languages</h5>
                         <div className="hello-json">
@@ -107,6 +118,7 @@ function Cards() {
             </div>
 
         </div>
+        </>
     )
 }
 export default Cards;

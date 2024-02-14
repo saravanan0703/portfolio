@@ -20,7 +20,7 @@ function Home() {
                   <p className="subtitle">HELLO</p>
                   <h1 className="title">
                       I'm <span>Saravanan<br />a </span> 
-                      <ReactTyped strings={["Full Stack Developer"]} typeSpeed={120} loop />
+                      <ReactTyped strings={["Full Stack Developer" , 'Web Developer']} typeSpeed={100} loop />
                   </h1>      
                   <p className="description">
                       Welcome to my portfolio! I'm Saravanan, a skilled and

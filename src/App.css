@@ -26,11 +26,10 @@ body {
 
 nav {
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  background-color: #ffffff;
-  z-index: 99;
+  z-index: 100;
+  background-color: #f8f9fa;
 }
 
 .nav__content {
@@ -89,11 +88,10 @@ ul li a:hover {
 }
 
 .section {
-  background-color: var(--extra-light);
 }
 
 .section__container {
-  margin-top: 100px !important; /* Adjust the value based on your navbar height */
+  margin-top: 88px !important; /* Adjust the value based on your navbar height */
   max-width: var(--max-width);
   margin: auto;
   padding: 1rem;
@@ -221,8 +219,7 @@ ul li a:hover {
 }
 
 .tech-cards .card-group .card {
-  border: 1px solid;
-  border-radius: 10px;
+  border: none;
 }
 
 .tech-item.version img {
@@ -382,4 +379,17 @@ ul li a:hover {
   .card-group {
     flex-flow: column;
   }
+ }
+ .technologies h1 {
+  text-decoration: underline;
+  margin-bottom: 30px;
+ }
+ h2,h3,h4,h5 {
+  color: #6b7280 !important;
+  font-size: 600;
+  text-decoration: underline;
+ }
+
+ .App {
+  background-image: url(./images/bg.jpg);
  }
