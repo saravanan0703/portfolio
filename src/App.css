@@ -87,9 +87,6 @@ ul li a:hover {
   color: var(--secondary-color);
 }
 
-.section {
-}
-
 .section__container {
   margin-top: 88px !important; /* Adjust the value based on your navbar height */
   max-width: var(--max-width);
@@ -289,6 +286,30 @@ ul li a:hover {
 .website-icon svg{
   width: 15% !important;
 }
+
+.marquee-container {
+  display: none;
+}
+.node-img img {
+  border-radius: 0;
+  width: 160px;
+}
+
+@media (max-width: 1199px) {
+  .marquee-container {
+    display: block;
+    max-height: 15vh;
+  }
+  .marquee-container img {
+    max-height: 12vh;
+    max-width: 70%;
+    margin: 0 20px;
+  }
+
+  .tech-cards {
+    display: none;
+  }
+}
 @media (width < 750px) {
   .sass-icons img {
     width: 30%;
@@ -303,9 +324,6 @@ ul li a:hover {
   .tech-cards .card-group {
     display: flex;
     flex-flow: column-reverse;
-  }
-  .tech-cards {
-    display: block;
   }
   .sass-icons .sass {
     display: inline-flex;
@@ -362,9 +380,10 @@ ul li a:hover {
   }
 
   .section__container {
-    padding: 10rem 1rem 5rem 1rem;
+    padding: 3rem 1rem 5rem 1rem;
     text-align: center;
     grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
   }
 
   .image {

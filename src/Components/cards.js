@@ -1,8 +1,10 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
+
 import reactImage from '../gifs/react-img.gif'
 import laravelImage from '../gifs/laravel.gif'
 import mysqlImg from '../images/pngimg.com - mysql_PNG29.png'
-import nodeImage from '../gifs/nodejs.gif'
+import nodeImage from '../gifs/node-js.gif'
 import bitbucket from '../images/pngegg.png'
 import supabase from '../images/1_uySwOV9bWmcDaSVyKdGe2A-removebg-preview.png'
 import Lottie from 'lottie-react';
@@ -12,19 +14,39 @@ import jsData from '../json/javascript.json'
 import sassimg from '../images/sass.png'
 import bootstrapimg from '../gifs/bootstrap.gif'
 import tailwindimg from '../images/tailwind.png'
+import jsimage from '../images/javascript-small.png'
+import cssimage from '../images/css3-small.png'
+import htmlimg from '../images/html5-small.png'
+import supimg from '../images/supabase-small.webp'
+import sasssmall from '../images/sass-small.png'
 function Cards() {
 
     const images = [
-        { src: laravelImage},
-        { src: nodeImage},
-        { src: animationData},
-        { src: reactImage},
-        { src: sassimg},
-        { src: bootstrapimg},
-      ]  
+        { src: laravelImage, text: "Laravel" },
+        { src: nodeImage, text: "Node.js" },
+        { src: reactImage, text: "React" },
+        { src: sasssmall, text: "Sass" },
+        { src: bootstrapimg, text: "Bootstrap" },
+        { src: jsimage, text: "Javascript" },
+        { src: cssimage, text: "CSS" },
+        { src: htmlimg, text: "HTML5" },
+        { src: supimg, text: "Supabase" },
+        { src: mysqlImg, text: "MySql" },
+
+    ];  
 
     return(
         <>
+        <div className="marquee-container">
+            <Marquee speed={80} loop={0} className="absolute mt-4 inset-x-0 top-0 h-669">
+                {images.map((item, index) => (
+                <div key={index} className="marquee-item">
+                    <img className="image-width mr-6 h-669" src={item.src} alt={`Image ${index}`} />
+                    <p className="image-text">{item.text}</p>
+                </div>
+                ))}
+            </Marquee>
+        </div>
         <div className="tech-cards">
             <div class="card-group">
                 <div className="cards-cont1">
@@ -60,7 +82,7 @@ function Cards() {
                             <img src={reactImage} alt="React" />
                             <span>React.js</span>
                         </div>
-                        <div className="tech-item">
+                        <div className="tech-item node-img">
                             <img src={nodeImage} alt="Node.js" />
                             <span>Node.js</span>
                         </div>
