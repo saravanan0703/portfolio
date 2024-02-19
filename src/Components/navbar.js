@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import resumepdf from '../pdfdocs/resume.pdf'
 
 function Navbar() {
+    const handleDownload = () => {
+        const filePath = resumepdf;
+        window.open(filePath, '_blank');
+      };
+
     return(
         <>
             <nav>
@@ -13,7 +19,9 @@ function Navbar() {
                     <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Resume</a></li>
+
+                    <li><a href="#" onClick={handleDownload}>Resume</a>
+                    </li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                     </ul>

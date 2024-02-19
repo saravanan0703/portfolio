@@ -4,8 +4,13 @@ import Cards from "../Components/cards";
 import Lottie from 'lottie-react';
 import animationData from '../json/json.json';
 import { ReactTyped } from "react-typed";
-
+import resumepdf from '../pdfdocs/resume.pdf'
 function Home() {
+  const handleDownload = () => {
+    const filePath = resumepdf;
+    window.open(filePath, '_blank');
+  };
+
     return(
         <section className="section">
             <div className="section__container">
@@ -29,8 +34,7 @@ function Home() {
                       web projects, ranging from personal blogs to e-commerce platforms.
                   </p>
                   <div className="action__btns">
-                      <button className="hire__me">Click Here</button>
-                      <button className="portfolio">Portfolio</button>
+                      <button className="portfolio" onClick={handleDownload}>View Resume</button>
                   </div>
               </div>
               <div className="image">
