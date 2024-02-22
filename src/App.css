@@ -9,6 +9,15 @@
   --extra-light: #faf5ff;
   --max-width: 1200px;
 }
+* {
+  scrollbar-width: thin;
+  scrollbar-color: grey;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
 
 * {
   padding: 0;
