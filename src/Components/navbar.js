@@ -22,7 +22,7 @@ function Navbar() {
 
                     <li><a href="#" onClick={handleDownload}>Resume</a>
                     </li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Certifications</a></li>
                     <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
