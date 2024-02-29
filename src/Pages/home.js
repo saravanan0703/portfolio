@@ -5,6 +5,8 @@ import Lottie from 'lottie-react';
 import animationData from '../json/json.json';
 import { ReactTyped } from "react-typed";
 import resumepdf from '../pdfdocs/resume.pdf'
+import Certification from "../Components/certifications";
+import Projects from "../Components/projects";
 function Home() {
   const handleDownload = () => {
     const filePath = resumepdf;
@@ -12,7 +14,7 @@ function Home() {
   };
 
     return(
-        <section className="section">
+        <section className="section home-section">
             <div className="section__container">
               <div className="content">
                   <div className="hello-json">
@@ -49,6 +51,8 @@ function Home() {
                     
               </div>
             </div>
+            <Projects />
+            <Certification />
             
         </section>
     )

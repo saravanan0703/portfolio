@@ -414,10 +414,48 @@ ul li a:hover {
  }
  h2,h3,h4,h5 {
   color: #6b7280 !important;
-  font-size: 600;
+  font-weight: 600;
   text-decoration: underline;
  }
 
  .App {
   background-image: url(./images/bg.jpg);
+ }
+ .certificates img{
+  width: 20%;
+ }
+
+ .certificates a:hover {
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    color: transparent;
+ }
+
+ .certificates {
+  display: flex;
+ }
+ .certificates img {
+  width: 60%;
+ }
+ .certificates .certify {
+  width: 100%;
+  text-align: center;
+  margin: 30px 0;
+ }
+
+ .certificates .certify div {
+  margin-bottom: 30px;
+ }
+ h1 {
+  font-size: 40px;
+ }
+ .header-certify , .projects-header{
+  text-align: center;
+  text-decoration: underline;
+  margin: 15px 0;
+ }
+
+ .project-worksrow .projects {
+  display: flex;
+  flex-wrap: wrap;
  }
