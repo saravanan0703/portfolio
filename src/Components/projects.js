@@ -4,10 +4,10 @@ import React from "react";
 function Projects () {
 
     const cardData = [
-        { header: 'Header 1', title: 'Dark card title 1', text: 'Some quick example text for card 1.' },
-        { header: 'Header 2', title: 'Dark card title 2', text: 'Some quick example text for card 2.' },
-        { header: 'Header 3', title: 'Dark card title 3', text: 'Some quick example text for card 2.' },
-        { header: 'Header 4', title: 'Dark card title 4', text: 'Some quick example text for card 2.' },
+        { header: 'Open Ai', title: 'Generate the title', text: 'Generate the title of your page or blogs etc..,' },
+        { header: 'Form Builder', title: 'Create a Form', text: 'Create a Form With just drag and drop with customize text and label' },
+        { header: 'Coming-Soon', title: 'Coming soon Page', text: 'Page for Coming soon with Customize content with time lapse' },
+        { header: 'CRM App', title: 'CRM App', text: 'CRM Application with all Functionalities like CRUD with Api ' },
 
       ];
 
