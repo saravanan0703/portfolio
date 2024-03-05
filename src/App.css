@@ -458,4 +458,27 @@ ul li a:hover {
  .project-worksrow .projects {
   display: flex;
   flex-wrap: wrap;
+  place-content: center;
+ }
+ .projects .card {
+  line-height: 24px;
+  background-color: transparent;
+  border: 1px solid var(--primary-color-dark);
+ }
+
+ .projects .techs {
+  margin: 10px 0 0;
+  border: 1px solid;
+  border-radius: 15px;
+  width: max-content;
+  padding: 2px 10px;
+  background-color:black;
+  color: white;
+ }
+ .projects .card .card-header {
+  border-bottom: 1px solid var(--primary-color-dark);
+  font-weight: 600;
+ }
+ .proj-links {
+  display: inline-block;
  }
