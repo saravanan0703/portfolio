@@ -6,6 +6,7 @@ import laravelImage from '../gifs/laravel.gif'
 import mysqlImg from '../images/pngimg.com - mysql_PNG29.png'
 import nodeImage from '../gifs/node-js.gif'
 import bitbucket from '../images/pngegg.png'
+import github from '../gifs/github.gif'
 import supabase from '../images/1_uySwOV9bWmcDaSVyKdGe2A-removebg-preview.png'
 import Lottie from 'lottie-react';
 import animationData from '../json/html.json';
@@ -54,12 +55,11 @@ function Cards() {
                         <div class="card-body">
                             <h5 class="card-title">Version Control</h5>
                             <div className="tech-item version">
-                            <p class="card-text d-flex justify-content-start flex-column card-text">
-                                <a class="text-dark text-decoration-none" href="/   " target="_blank" rel="noopener noreferrer">
-                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwMCIgaGVpZ2h0PSIyNTAwIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWluWU1pbiBtZWV0Ij48cGF0aCBkPSJNMjUxLjE3MiAxMTYuNTk0TDEzOS40IDQuODI4Yy02LjQzMy02LjQzNy0xNi44NzMtNi40MzctMjMuMzE0IDBsLTIzLjIxIDIzLjIxIDI5LjQ0MyAyOS40NDNjNi44NDItMi4zMTIgMTQuNjg4LS43NjEgMjAuMTQyIDQuNjkzIDUuNDggNS40ODkgNy4wMiAxMy40MDIgNC42NTIgMjAuMjY2bDI4LjM3NSAyOC4zNzZjNi44NjUtMi4zNjUgMTQuNzg2LS44MzUgMjAuMjY5IDQuNjU3IDcuNjYzIDcuNjYgNy42NjMgMjAuMDc1IDAgMjcuNzQtNy42NjUgNy42NjYtMjAuMDggNy42NjYtMjcuNzQ5IDAtNS43NjQtNS43Ny03LjE4OC0xNC4yMzUtNC4yNy0yMS4zMzZsLTI2LjQ2Mi0yNi40NjItLjAwMyA2OS42MzdhMTkuODIgMTkuODIgMCAwIDEgNS4xODggMy43MWM3LjY2MyA3LjY2IDcuNjYzIDIwLjA3NiAwIDI3Ljc0Ny03LjY2NSA3LjY2Mi0yMC4wODYgNy42NjItMjcuNzQgMC03LjY2My03LjY3MS03LjY2My0yMC4wODYgMC0yNy43NDZhMTkuNjU0IDE5LjY1NCAwIDAgMSA2LjQyMS00LjI4MVY5NC4xOTZhMTkuMzc4IDE5LjM3OCAwIDAgMS02LjQyMS00LjI4MWMtNS44MDYtNS43OTgtNy4yMDItMTQuMzE3LTQuMjI3LTIxLjQ0Nkw4MS40NyAzOS40NDJsLTc2LjY0IDc2LjYzNWMtNi40NCA2LjQ0My02LjQ0IDE2Ljg4NCAwIDIzLjMyMmwxMTEuNzc0IDExMS43NjhjNi40MzUgNi40MzggMTYuODczIDYuNDM4IDIzLjMxNiAwbDExMS4yNTEtMTExLjI0OWM2LjQzOC02LjQ0IDYuNDM4LTE2Ljg4NyAwLTIzLjMyNCIgZmlsbD0iI0RFNEMzNiIvPjwvc3ZnPg==" alt="GIT" class="image-style m-1 rounded" /> GIT</a></p>
+                                <img src={github} alt="Github" />
+                                <span>GitHub</span>
                             </div>
                             <div className="tech-item version">
-                                <img src={bitbucket} alt="React" />
+                                <img src={bitbucket} alt="BitBucket" />
                             </div>
                         </div>
                     </div>
