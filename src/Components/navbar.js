@@ -23,14 +23,11 @@ function Navbar() {
                             Home
                         </Link>
                     </li>
-                    <li><Link spy={true}
-                            offset={-70} 
-                            to="home-section">About
-                        </Link>
-                    </li>
-
                     <li><a href="#" onClick={handleDownload}>Resume</a></li>
-                    <li><a href="#">Works</a></li>
+                    <li><Link spy={true}
+                            offset={-140} 
+                            to="projects">Works
+                        </Link></li>
 
                     <li><Link spy={true}
                             offset={-70} 
