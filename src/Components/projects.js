@@ -8,6 +8,7 @@ function Projects () {
         { id:'https://typescript-form-builder.vercel.app/' ,header: 'Form Builder', title: 'Create a Form', text: 'Create a Form With just drag and drop with customize text and label',tech : 'React js ,TypeScript, Tailwind Css ' },
         { id: 'https://coming-soon-rosy-alpha.vercel.app/',header: 'Coming-Soon', title: 'Coming soon Page', text: 'Page for Coming soon with Customize content with time lapse' ,tech: 'React js, Tailwind Css'},
         { id:'#' ,header: 'CRM App', title: 'CRM App', text: 'CRM Application with all Functionalities like CRUD with Api ' , tech: 'React Js , Antd icons, Material Ui'},
+        { id:'https://sara-secondbrain.vercel.app/' ,header: 'Second Brain Chat Bot', title: 'Second Brain Ai Chat Bot', text: 'Chat Bot with Custom Documents upload with Mistral Ai ' , tech: 'Typescript'}
       ];
 
 
