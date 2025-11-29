@@ -16,7 +16,7 @@ function Footer() {
           <div className="center website-icon">
             <Lottie animationData={webIcon} loop={true} autoplay={true} />
           </div>
-          <p className="text-center text-body-secondary">© 2024</p>
+          <p className="text-center text-body-secondary">© 2025 - 2026</p>
         </footer>
       </div>
     </div>
